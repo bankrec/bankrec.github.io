@@ -1,25 +1,49 @@
-<!DOCTYPE HTML>
-    <html land=en>
-        <title>Bank Records</title>
-        <head><link rel="icon" href="icon.png"/></head>
-        <body bgcolor="#FFCD63" style="cursor:help">
-        <figure><a href="https://bankrec.github.io"><img src="icon.png" style="width:90px;height:90px" border="0"></a></figure>
-            <center><p style="font-size: 96pt;"><font face='Arial'><b><a href="https://bankrec.github.io/familyphoto" style="color:black; text-decoration:none">Bank</a> Contact</b></font></a></p></center>
-        <P>&nbsp;<P>
-        <center><a style="color:white; text-decoration:none"> <font size=6 face='Arial'>liam@bankrecords.com.au</font></a>
-        <ul style="list-style-type:none">
-        
-        <center><p><a href="https://www.facebook.com/bankrec/"><font size="6" color="#0000FF" face="impact"><i>facebook</i></font></a></p>
-        <center><p><a href="https://bankrecords.bandcamp.com/releases"><font size="6" color="#C0C0C0" face="impact"><i>bandcamp</i></font></a></p>
-        <p><a href="https://soundcloud.com/bankrecordsmelbourne"><font size="6" color="#ff8300" face="impact"><i>soundcloud</i></font></a></p></centre>
-        
-        
-        
-        
-        
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
+<body>
+<div class="container">
+<!--AUDIO PLAYER-->
+  <div class="row" id="header">
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<a href="../home/index.html"><img src="../img/bank_icon.png" style="width:90px;height:90px" border="0" /></a>
+	</div>
+	<div class="eight columns"></div>
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<span style="cursor:pointer">
+			<img id="playerIcon" src="../img/play.png" style="width:90px;height:90px" onClick="toggle()"
+				 onmouseover="playerMouseOver()" onmouseout="playerMouseOut()"/>
+		</span>
+	</div>
+  </div>
+<!--END OF AUDIO PLAYER-->
 
+<!-- Primary Page Layout -->
+  <div class="row" id="heading">
+    <div class="twelve columns" style="margin-top:80px; text-align: center;">
+		<span style="font-size: 96pt; font-weight:bold;">Bank Contact</span>
+		<br/>
+	</div>
+  </div>
+  <div class="row" id="heading" style="text-align:center">
+		<span class="white-heading">liam@bankrecords.com.au</span><br/>
+		<a href="https://www.facebook.com/bankrec/"><span class="italic-link" style="color:blue;">facebook</span><br/></a>
+		<a href="https://bankrecords.bandcamp.com/releases"><span class="italic-link" style="color:gray;">bandcamp</span><br/></a>
+		<a href="https://soundcloud.com/bankrecordsmelbourne"><span class="italic-link" style="color:orange;">soundcloud</span><br/></a>
+  </div>
 </div>
-        </body>
-    </html>
+</body>
+
+<!-- Scripts -->
+<script src="../js/playerControl.js"></script>
+</html>

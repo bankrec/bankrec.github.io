@@ -1,51 +1,56 @@
-<!DOCTYPE HTML>
-    <html land=en>
-        <title>Bank Records</title>
-        <head><link rel="icon" href="icon.png"/></head>
-        <body bgcolor="#FFCD63" style="cursor:help">
-        <figure><a href="https://bankrec.github.io"><img src="icon.png" style="width:90px;height:90px" border="0"></a></figure>
-            <center><p style="font-size: 96pt;"><font face='Arial'><b><a href="https://bankrec.github.io/familyphoto" style="color:black; text-decoration:none">Bank</a> Artists</b></font></a></p></center>
-        <P>&nbsp;<P>
-            
+<!DOCTYPE html>
+<html lang="en">
 
-            
-      <style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #FFCD63;
-    text-align: center;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #FFCD63;
-}
-</style>
-</head>
-<body>
-
-<table>
-  <tr>
-    <th><center><figure><a href="https://bankrec.github.io/hearing"><img src="hearing.jpg" style="width:650px;height:366px"/>
-          </a></figure></center></th>
-    <th><center><figure><a href="https://bankrec.github.io/cyanide"><img src="cyanide.jpg" style="width:650px;height:366px"/>
-           </a></figure></center></th>
-  </tr>
-  <tr>
-    <td><a href="https://bankrec.github.io/hearing" style="color:white; text-decoration:none"> <font size=6 face='Arial'>Hearing</font></a></td>
-    <td><a href="https://bankrec.github.io/cyanide" style="color:white; text-decoration:none"> <font size=6 face='Arial'>Cyanide Thornton</font></a></td>
-  </tr>
+<head>
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-</table>
-     
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
+<body>
+<div class="container">
+<!--AUDIO PLAYER-->
+  <div class="row" id="header">
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<a href="../home/index.html"><img src="../img/bank_icon.png" style="width:90px;height:90px" border="0" /></a>
+	</div>
+	<div class="eight columns"></div>
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<span style="cursor:pointer">
+			<img id="playerIcon" src="../img/play.png" style="width:90px;height:90px" onClick="toggle()"
+				 onmouseover="playerMouseOver()" onmouseout="playerMouseOut()"/>
+		</span>
+	</div>
+  </div>
+<!--END OF AUDIO PLAYER-->
 
-
+<!-- Primary Page Layout -->
+  <div class="row" id="heading">
+    <div class="twelve columns" style="margin-top:80px; text-align: center;">
+		<span style="font-size: 96pt; font-weight:bold;"><a style="color:black" href="../family/">Bank</a> Artists</span>
+		<br/>
+		
+	</div>
+  </div>
+    <div class="row" id="heading">
+    <div class="six columns" style="margin-top:80px; text-align: center;">
+		<a href="../hearing"><img src="./img/hearing.jpg"/></a><br/>
+		<a href="../hearing" style="font-size:xx-large">Hearing</a>
+	</div>
+	<div class="six columns" style="margin-top:80px; text-align: center;">
+		<a href="../cyanide"><img src="./img/cyanide.jpg" style="width:100%; max-width:100%;"></a><br/>
+		<a href="../cyanide" style="font-size:xx-large">Cyanide Thornton</a>
+	</div>
+  </div>
 </div>
-        </body>
-    </html>
+</body>
+
+<!-- Scripts -->
+<script src="../js/playerControl.js"></script>
+<script src="../js/textEdit.js"></script>
+
+</html>

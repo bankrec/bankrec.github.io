@@ -1,18 +1,48 @@
-<!DOCTYPE HTML>
-    <html land=en>
-        <title>Bank Records</title>
-        <head><link rel="icon" href="icon.png"/></head>
-        <body bgcolor="#FFCD63" style="cursor:help">
-        <figure><a href="https://bankrec.github.io"><img src="icon.png" style="width:90px;height:90px" border="0"></a></figure>
-            <center><p style="font-size: 96pt;"><font face='Arial'><b><a href="https://bankrec.github.io/familyphoto" style="color:black; text-decoration:none">Evelyn Ida</a> Morris</b></font></a></p></center>
-        <P>&nbsp;<P>
-            
-     
-        <center><a<p><a href="https://soundcloud.com/evelyn-morris/"><font size="6" color="#ff8300" face="impact"><i>soundcloud</i></font></a></p></centre>
-        <p><center><figure><img src="rez.JPG" border="0"></figure></center></p>
-        
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
+<body>
+<div class="container">
+<!--AUDIO PLAYER-->
+  <div class="row" id="header">
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<a href="../home/index.html"><img src="../img/bank_icon.png" style="width:90px;height:90px" border="0" /></a>
+	</div>
+	<div class="eight columns"></div>
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<span style="cursor:pointer">
+			<img id="playerIcon" src="../img/play.png" style="width:90px;height:90px" onClick="toggle()"
+				 onmouseover="playerMouseOver()" onmouseout="playerMouseOut()"/>
+		</span>
+	</div>
+  </div>
+<!--END OF AUDIO PLAYER-->
+
+<!-- Primary Page Layout -->
+  <div class="row" class="heading" style="line-height:1;">
+    <div class="twelve columns" style="margin-top:80px; text-align: center;">
+		<span style="font-size: 96pt; font-weight:bold;">Evelyn Ida Morris</span>
+	</div>
+  </div>
+  <div class="row" id="heading">
+    <div class="twelve columns" style="text-align: center;">
+		<a class="italic-link" style="color:#ff8300" href="https://soundcloud.com/evelyn-morris/">soundcloud</a><br />
+		<img src="./img/01.jpg"></img>
+	</div>
+  </div>
 </div>
-        </body>
-    </html>
+</body>
+
+<!-- Scripts -->
+<script src="../js/playerControl.js"></script>
+</html>

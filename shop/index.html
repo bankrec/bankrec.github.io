@@ -1,17 +1,44 @@
-<!DOCTYPE HTML>
-    <html land=en>
-        <title>Bank Records</title>
-        <head><link rel="icon" href="icon.png"/></head>
-        <body bgcolor="#FFCD63" style="cursor:help">
-        <figure><a href="https://bankrec.github.io"><img src="icon.png" style="width:90px;height:90px" border="0"></a></figure>
-            <center><p style="font-size: 96pt;"><font face='Arial'><b><a href="https://bankrec.github.io/familyphoto" style="color:black; text-decoration:none">Bank</a> Shop</b></font></a></p></center>
-        <P>&nbsp;<P>
-            
-            <center><iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=712588527/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="http://bankrecords.bandcamp.com/album/bank-records-2011-2016">Bank Records 2011-2016 by Bank Records</a></iframe></center>
-        
-        
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
+<body>
+<div class="container">
+<!--AUDIO PLAYER-->
+  <div class="row" id="header">
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<a href="../home/index.html"><img src="../img/bank_icon.png" style="width:90px;height:90px" border="0" /></a>
+	</div>
+	<div class="eight columns"></div>
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<span style="cursor:pointer">
+			<img id="playerIcon" src="../img/play.png" style="width:90px;height:90px" onClick="toggle()"
+				 onmouseover="playerMouseOver()" onmouseout="playerMouseOut()"/>
+		</span>
+	</div>
+  </div>
+<!--END OF AUDIO PLAYER-->
+
+<!-- Primary Page Layout -->
+  <div class="row" id="heading">
+    <div class="twelve columns" style="margin-top:80px; text-align: center;">
+		<span style="font-size: 96pt; font-weight:bold;">Bank Shop</span>
+		<br/>
+		
+	</div>
+  </div>
 </div>
-        </body>
-    </html>
+</body>
+
+<!-- Scripts -->
+<script src="../js/playerControl.js"></script>
+</html>

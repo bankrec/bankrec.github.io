@@ -1,38 +1,66 @@
-<!DOCTYPE HTML>
-    <html land=en>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
+<body>
+ <!-- Primary Page Layout -->
+<div class="container">
+  <div class="row" id="header">
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<a href="../home/index.html"><img src="../img/bank_icon.png" style="width:90px;height:90px" /></a>
+	</div>
+	<div class="eight columns"></div>
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<span style="cursor:pointer">
+			<img id="playerIcon" src="../img/play.png" style="width:90px;height:90px" onClick="toggle()"
+				 onmouseover="playerMouseOver()" onmouseout="playerMouseOut()"/>
+		</span>
+	</div>
+  </div>
 
-        <title>Bank Records</title>
-        <head>
-            <meta name="google-site-verification" content="pQKaR0NiSWcW31THFtbkKiu1sV8Drm2XxtjtB9H67oU" />
-            <link rel="icon" href="icon.png"/>
-        </head>
-        <figure><a href="https://bankrec.github.io"><img src="icon.png" style="width:90px;height:90px" border="0"></a></figure>
-        <body bgcolor="#FFCD63" style="cursor:help">
-            
-        <center><p style="font-size: 96pt;"><font face='Arial'><b>About us</b></font></p></center>
-            
-         <center><a style="color:white; text-decoration:none"> <font size=6 face='Arial'><textarea rows="19" cols="50" style="color: black; background-color: #FFCD63; font-size: 16pt">
-Bank Records is a label stemming from the artist collective surrounding 'The Bank', a recording studio, artists studio space and venue in an old bank in Preston, Victoria, Australia.
+  <div class="row" class="heading">
+    <div class="twelve columns" style="margin-top:80px; text-align: center;">
+		<span style="font-size: 96pt; font-weight:bold;">About Us</span>
+	</div>
+  </div>
 
-The Bank was established in 2011 by Liam Barton and Bryony Hughes and subsequently became a home for artists and musicians. All day festivals were held in the large backyard called 'Bank Holidays' and band nights such as 'Bank Hootenannys' soon evolved in the area which was once filled with bank tellers and vaults.
+  <div class="row" id="about_text">
+    <div class="twelve columns" style="margin-top:80px; text-align: center;">
+		<div id="aboutText" contenteditable="true">
+		<span style="font-size:x-large">
+		Bank Records is a label stemming from the artist collective surrounding 'The Bank', a recording studio, artists studio space and venue in an old bank in Preston, Victoria, Australia.
 
-Bands born at the bank include Lalić, RVG, Gregor, Hearing and Faye Soft. Bands recorded at the bank include 2 Steps on the Water, Drug Sweat, Mangelwurzel, Sweet Whirl, Footy and Suss Cunts.
+		The Bank was established in 2011 by Liam Barton and Bryony Hughes and subsequently became a home for artists and musicians. All day festivals were held in the large backyard called 'Bank Holidays' and band nights such as 'Bank Hootenannys' soon evolved in the area which was once filled with bank tellers and vaults.
 
-In 2017 the Bank expanded to become an independent record label, with a focus on releasing eclectic music made by friends. Current Label signees are Hearing, Cyanide Thornton, Footy and Caroline No.
-</textarea></font></a>
-              <center><p style="font-size: 18pt;"><font face='Snell Roundhand'><b>Feel free to edit our bio above...</b></font></p></center>
-         
-            
-         <!--<center><a style="color:white; text-decoration:none"> <font size=6 face='Arial'>Bank Records is a label born out of the artist collective surrounding 'The Bank', a recording studio, artists studio spaces and venue in an old bank in Preston, Victoria, Australia.
+		Bands born at the bank include Lalić, RVG, Gregor, Hearing and Faye Soft. Bands recorded at the bank include 2 Steps on the Water, Drug Sweat, Mangelwurzel, Sweet Whirl, Footy and Suss Cunts.
 
-The Bank was established in 2011 by Liam Barton and Bryony Hughes and quickly became a hub for artists and musicians. They held notorious all day festivals in the large backyard called 'Bank Holidays' and band nights such as 'Bank Hootenannys' in the area which was once filled with bank tellers and the vault.
+		In 2017 the Bank expanded to become an independent record label, with a focus on releasing eclectic music made by friends. Current Label signees are Hearing, Cyanide Thornton, Footy and Caroline No.
+		</span><br/>
+		</div>
+		<button id="save">Save Changes</button>
+		<br/>
+		<span style="font-weight:bold">Feel free to edit our bio above...</span>
+	</div>
+  </div>
+    <div class="row" id="linkToFacebook">
+    <div class="twelve columns" style="text-align: center;">
+		<a href="https://www.facebook.com/bankrec/" target="_blank"><img src="./img/aroundhouse2.gif" style="width:700px;height:525px" border="1"></a>
+	</div>
+  </div>
+</div>
+</body>
 
-Bands born at the bank include Lalic, RVG, Gregor and Hearing. Bands recorded at the bank include 2 Steps on the Water, Drug Sweat, Mangelwurzel, Sweet Whirl, Footy and Suss Cunts.
+<!-- Scripts -->
+<script src="../js/playerControl.js"></script>
+<script src="../js/textEdit.js"></script>
 
-In 2016 the Bank expanded to become an independent record label, with a focus on releasing pop music at the weirder end of the spectrum, made by artists surrounding the scene. Current Label signees are Hearing, Cyanide Thornton, Footy and Caroline No.</font></a>-->
-             
-         <P>&nbsp;<P>
-        <p><center><figure><a href="https://www.facebook.com/bankrec/"><img src="aroundhouse2.gif" style="width:700px;height:525px" border="1"></a></figure></center></p>
-             
+</html>

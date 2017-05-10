@@ -1,85 +1,98 @@
-<!DOCTYPE HTML>
-    <html land=en>
-        <title>Bank Records</title>
-        <head><link rel="icon" href="icon.png"/></head>
-        <body bgcolor="#FFCD63" style="cursor:help">
-        <figure><a href="https://bankrec.github.io"><img src="icon.png" style="width:90px;height:90px" border="0"></a></figure>
-            <center><p style="font-size: 96pt;"><font face='Arial'><b><a href="https://bankrec.github.io/familyphoto" style="color:black; text-decoration:none">Bank</a> Art</b></font></a></p></center>
-        <P>&nbsp;<P>
-            
+<!DOCTYPE html>
+<html lang="en">
 
-            
-      <style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #FFCD63;
-    text-align: center;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #FFCD63;
-}
-</style>
+<head>
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+<div class="container">
+<!--AUDIO PLAYER-->
+  <div class="row" id="header">
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<a href="../home/index.html"><img src="../img/bank_icon.png" style="width:90px;height:90px" border="0" /></a>
+	</div>
+	<div class="eight columns"></div>
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<span style="cursor:pointer">
+			<img id="playerIcon" src="../img/play.png" style="width:90px;height:90px" onClick="toggle()"
+				 onmouseover="playerMouseOver()" onmouseout="playerMouseOut()"/>
+		</span>
+	</div>
+  </div>
+<!--END OF AUDIO PLAYER-->
 
-<table>
-  <tr>
-    <th><center><figure><a href="liam"><img src="liam.jpg" style="width:300px;height:439px"/>
-          </a></figure></center></th>
-    <th><center><figure><a href="anna"><img src="anna.jpg" style="width:300px;height:439px"/>
-           </a></figure></center></th>
-    <th><center><figure><a href="julie"><img src="julie.jpg" style="width:300px;height:439px"/>
-           </a></figure></center></th>
-    
-      
-  </tr>
-  <tr>
-    <td><a href="liam" style="color:white; text-decoration:none"> <font size=5 face='Arial'>Liam Barton</font></a></td>
-    <td><a href="anna" style="color:white; text-decoration:none"> <font size=5 face='Arial'>Anna Cunningham</font></a></td>
-    <td><a href="julie" style="color:white; text-decoration:none"> <font size=5 face='Arial'>Julie Calabrese</font></a></td>
-    
+<!-- Primary Page Layout -->
+  <div class="row" class="heading">
+    <div class="twelve columns" style="margin-top:80px; text-align: center;">
+		<span style="font-size: 96pt; font-weight:bold;">Bank Art</span>
+	<br/>	
+	</div>
+  </div>
+  <div class="row">
+    <div class="four columns" style="text-align: center;">
+		<a href="../liam">
+			<img src="./img/liam.jpg"/>
+			<span style="font-size: x-large;">Liam Barton<span/>
+		</a>
+	</div>
+	<div class="four columns" style="text-align: center;">
+		<a href="../anna">
+			<img src="./img/anna.jpg"/>
+			<span style="font-size: x-large;">Anna Cunningham<span/>
+		</a>
+	</div>
+	<div class="four columns" style="text-align: center;">
+		<a href="../julie">
+			<img src="./img/julie.jpg"/>
+			<span style="font-size: x-large;">Julie Calabrese<span/>
+		</a>
+	</div>
+  </div>
+  <div class="row">
+    <div class="four columns" style="text-align: center;">
+		<a href="../gregor">
+			<img src="./img/gregor.jpg"/>
+			<span style="font-size: x-large;">Gregor Kompar<span/>
+		</a>
+	</div>
+	<div class="four columns" style="text-align: center;">
+		<a href="../michelle">
+			<img src="./img/michelle.jpg"/>
+			<span style="font-size: x-large;">Michelle Peta Dinkgreve<span/>
+		</a>
+	</div>
+	<div class="four columns" style="text-align: center;">
+		<a href="../sacha">
+			<img src="./img/sacha.jpg"/>
+			<span style="font-size: x-large;">Sacha Bryning<span/>
+		</a>
+	</div>
+  </div>
+  <div class="row">
+    <div class="four columns" style="text-align: center;">
+		<a href="../lalic">
+			<img src="./img/lalic.jpg"/>
+			<span style="font-size: x-large;">Mladen Lali&#263; Milinkovi&#263;<span/>
+		</a>
+	</div>
+	<div class="four columns" style="text-align: center;">
+		<a href="../nina">
+			<img src="./img/nina.jpg"/>
+			<span style="font-size: x-large;">Nina Hassall<span/>
+		</a>
+	</div>
+	<div class="four columns" style="text-align: center;">
+	</div>
+   </div>
+</body>
 
-  <tr> 
-    <th><center><figure><a href="gregor"><img src="gregor.jpg" style="width:300px;height:439px"/>
-           </a></figure></center></th>
-    <th><center><figure><a href="michelle"><img src="michelle.jpg" style="width:300px;height:439px"/>
-           </a></figure></center></th>
-    <th><center><figure><a href="sacha"><img src="sacha.jpg" style="width:300px;height:439px"/>
-           </a></figure></center></th>
-      
-      
-  </tr>
-  <tr>
-    <td><a href="gregor" style="color:white; text-decoration:none"> <font size=5 face='Arial'>Gregor Kompar</font></a></td>
-    <td><a href="michelle" style="color:white; text-decoration:none"> <font size=5 face='Arial'>Michelle Peta Dinkgreve</font></a></td>
-    <td><a href="sacha" style="color:white; text-decoration:none"> <font size=5 face='Arial'>Sacha Bryning</font></a></td>
-      
-      
-   <tr> 
-    <th><center><figure><a href="lalic"><img src="lalic2.jpg" style="width:300px;height:439px"/>
-           </a></figure></center></th>
-    <th><center><figure><a href="ninz"><img src="ninadrawing.jpg" style="width:300px;height:439px"/>
-           </a></figure></center></th> 
-      
-  </tr>
-  <tr>
-    <td><a href="lalic" style="color:white; text-decoration:none"> <font size=5 face='Arial'>Mladen Lalić Milinković</font></a></td>
-    <td><a href="ninz" style="color:white; text-decoration:none"> <font size=5 face='Arial'>Nina Hassall</font></a></td>
-    
-    
-    
-</table>
-     
-
-
-
-</div>
-        </body>
-    </html>
+<!-- Scripts -->
+<script src="../js/playerControl.js"></script>
+</html>

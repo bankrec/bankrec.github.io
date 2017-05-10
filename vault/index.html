@@ -1,17 +1,49 @@
-<!DOCTYPE HTML>
-    <html land=en>
-        <title>Bank Records</title>
-        <head><link rel="icon" href="icon.png"/></head>
-        <body bgcolor="#FFCD63" style="cursor:help">
-        <figure><a href="https://bankrec.github.io"><img src="icon.png" style="width:90px;height:90px" border="0"></a></figure>
-            <center><p style="font-size: 96pt;"><font face='Arial'><b><a href="https://bankrec.github.io/familyphoto" style="color:black; text-decoration:none">Bank</a> Vault</b></font></a></p></center>
-        <P>&nbsp;<P>
-        
-        <center><figure><img src="vault.gif" border="0" width="400" height="500"></figure></center>
-        <center><p style="font-size: 18pt;"><font face='Snell Roundhand'><b>Hello Dave!</b></font></p></center>
-        <center><p><a href="https://daveoconnor.bandcamp.com/"><font size="6" color="white" face="impact"><i>Dave O'Connor's music</i></font></a></p></centre>
-        
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<div class="container">
+<!--AUDIO PLAYER-->
+  <div class="row" id="header">
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<a href="../home/index.html"><img src="../img/bank_icon.png" style="width:90px;height:90px" border="0" /></a>
+	</div>
+	<div class="eight columns"></div>
+	<div class="two columns" style="margin-top:5px; text-align: center;">
+		<span style="cursor:pointer">
+			<img id="playerIcon" src="../img/play.png" style="width:90px;height:90px" onClick="toggle()"
+				 onmouseover="playerMouseOver()" onmouseout="playerMouseOut()"/>
+		</span>
+	</div>
+  </div>
+<!--END OF AUDIO PLAYER-->
+
+<!-- Primary Page Layout -->
+  <div class="row" id="heading">
+    <div class="twelve columns" style="margin-top:80px; text-align: center;">
+		<span style="font-size: 96pt; font-weight:bold;">Bank Vault</span>
+	</div>
+  </div>
+  <div class="row">
+    <div class="twelve columns" style="text-align: center;">
+		<img src="./img/01.gif"><br/>
+		<span style="font-size:x-large;">Hello Dave! <br/>
+		<a class="italic-link" target="_blank" href="https://daveoconnor.bandcamp.com/">Dave O'Connor's music</a>
+	</div>
+  </div>
 </div>
-        </body>
-    </html>
+</body>
+
+<!-- Scripts -->
+<script src="../js/playerControl.js"></script>
+</html>
