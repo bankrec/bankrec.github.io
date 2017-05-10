@@ -9,11 +9,8 @@ var sunset = sun.sunset;
 var sunrise = sun.sunrise;
 var dark = true;
 
-console.log(hour);
-console.log(sunset.getHours());
 if(hour > sunrise.getHours() && hour < sunset.getHours()) {
 	dark = false;
-	console.log("htes");
 } else if (hour == sunrise.getHours()) {
 	if (minute < sunrise.getMinutes())
 		dark = true;
@@ -34,13 +31,11 @@ var NIGHT_2_LENGTH = 1061;
 //START VIDEO AT TIME: dayInSecond % [video length]
 var liveStream = document.getElementById("livestream");
 
-console.log("hour:" + hour + "sunset:" + sunset.getHours() + "sunrise:" + sunrise.getHours());
 var position;
 if(day % 2 == 0) {
 	if (dark) {
 		position = dayInSeconds % NIGHT_1_LENGTH;
 		liveStream.src = "./vid/n1.mp4";
-		console.log("1");
 
 	}else{
 		position = dayInSeconds % DAY_1_LENGTH;
@@ -50,7 +45,6 @@ if(day % 2 == 0) {
 	if (dark) {
 		position = dayInSeconds % NIGHT_2_LENGTH;
 		liveStream.src = "./vid/n2.mp4";
-		console.log("2");
 
 	}else{
 		position = dayInSeconds % DAY_2_LENGTH;
