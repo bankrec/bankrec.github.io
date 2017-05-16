@@ -52,7 +52,12 @@ if(day % 2 == 0) {
 	}
 }
 blinker = document.getElementById("blinker");
+loading = document.getElementById("loading");
+livestream.addEventListener("loadeddata", function() {
+     blinker.style.visibility = "visible";
+	 loading.style.visibility = "hidden";
+}, false);
+
 liveStream.addEventListener("loadedmetadata", function() {
      this.currentTime = position;
-	 blinker.style.visibility = "visible";
 }, false);
