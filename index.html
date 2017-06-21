@@ -13,7 +13,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/bank_icon.png">
 
   <link rel="stylesheet" href="css/style.css">
-  
+  <script src="./js/click.js"></script>
+
 </head>
 
 <body style="overflow:hidden;">  
@@ -21,10 +22,9 @@
 		<source src="snd/song.ogg" type="audio/ogg" />
 		<source src="snd/song.mp3" type="audio/mpeg" />
 	</audio>
-	<iframe id="iframeMain" src="./home/index.html" style="border:0; width: 100%; height: 100%"></iframe>
+	<iframe onload="click()" id="iframeMain" src="./home/index.html" style="border:0; width: 100%; height: 100%"></iframe>
 </body>
 <!-- Scripts -->
 <!--Set to true to start with music playing; Set to false to start without music playing-->
 <script>playing = false;</script>
-
 </html>
