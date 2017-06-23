@@ -1,18 +1,18 @@
 function overlayOn() {
     document.getElementById("overlay").style.display = "block";
-	player.playVideo();
+	bankIntro.playVideo();
 }
 
 function overlayOff() {
     document.getElementById("overlay").style.display = "none";
-	player.pauseVideo();
+	bankIntro.pauseVideo();
 }
 
 
 // create youtube player
-        var player;
+        var bankIntro;
         function onYouTubePlayerAPIReady() {
-            player = new YT.Player('player', {
+            bankIntro = new YT.Player('player', {
 			  playerVars: {
                     controls: 0,
                     showinfo: 0,
