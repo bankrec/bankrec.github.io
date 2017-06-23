@@ -9,7 +9,16 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/overlay.css">	
+  
+  <!-- CSS -->
+  <script src="http://www.youtube.com/player_api"></script>
+  <script src="../js/overlay.js"></script>
 </head>
+
+<div onclick="overlayOff()" id="overlay">
+	<div id="overlayContent"><div id="player"></div></div>
+</div>
 
 <body onclick="parent.clickSound()">
 <!-- Primary Page Layout -->
@@ -34,14 +43,15 @@
   </div>
   
   <div class="row" id="logo">
-    <div class="twelve columns" style="margin:0px; text-align: center;">
-		<img src="../img/bank_icon.png" style="width:170px;height:170px">
+    <div class="twelve columns" style="text-align: center;">
+		<img onclick="overlayOn()" src="../img/bank_icon.png" style="width:170px;height:170px">
+		<br />
 	</div>
   </div>
   
   <div class="row" id="home_index">
 	<div class="twelve columns" style="text-align: center;">
-		<span style="font-size:x-large"><a href="../about/index.html">About</a></span><br/>
+		<span style="font-size:x-large;"><a href="../about/index.html">About</a></span><br/>
 		<span style="position:relative; left:10px; font-size:xx-large"><a href="../live/index.html">Live Stream<span style="position:relative; left:2px; top:0px; color:#009925; font-size:30px">&#9679;<span></a></span><br/>
 		<span style="font-size:xx-large"><a href="../artists/index.html">Artists</a></span><br/>
 		<span style="font-size:xx-large"><a href="../art/index.html">Art</a></span><br/>
